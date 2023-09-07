@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: auto;
+    max-width: 120rem;
+}
+
+header {
+    background: #FFD900;
+    padding: 2rem 5%;
+}
+
+main {
+    display: grid;
+    gap: 1rem;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+}
+
+.texto {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    flex: 1 0 58rem;
+    background: #514988;
+    color: white;
+}
+
+.texto h1 {
+    font-size: 5.2rem;
+    margin: 2rem auto;
+    color: #F3C61F;
+
+}
+
+.texto h2 {
+    font-size: 2.3rem;
+    margin-bottom: 2.9rem;
+}
+
+.texto p {
+    max-width: 46rem;
+    font-size: 2rem;
+    margin: 0 auto;
+}
+
+.timer {
+    margin-top: 2rem;
+    display: grid;
+    grid-auto-flow: column;
+    color: #514988;
+    text-align: center;
+    font-size: 3.2rem;
+    font-weight: 700;
+}
+
+.info {
+    color: #E33881;
+    text-align: center;
+    font-size: 1.9rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.banner video {
+    max-width: 60rem;
+}
+
+footer {
+    background-color: rgb(243, 243, 243);
+    display: grid;
+    grid-auto-flow: column;
+    width: 120rem;
+    padding-bottom: 15rem;
+}
+
+.bloco {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-top: 2rem;
+    color: #F3C61F;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    width: 80rem;
+}
+
+footer .dias {
+    display: grid;
+    grid-auto-flow: column;
+}
+
+.dias img {
+    width: 15rem;
+}
+
+.button {
+    align-self: center;
+}
+
+.button button{
+    border-radius: 20px;
+    background: #514988;
+    border: none;
+    color: white;
+    padding: 3.4rem 1rem;
+    width: 40rem;
+    cursor: pointer;
+    color: #FFF;
+    text-align: center;
+    font-size: 4.2rem;
+    font-weight: 700;
+    transition: all .3s;
+}
+
+button:hover{
+    background: #302b4e;
+}
