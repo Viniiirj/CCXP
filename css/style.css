@@ -8,7 +8,9 @@
     font-size: 62.5%;
 }
 
-body {
+body, html {
+    display: flex;
+    flex-direction: column;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: auto;
     max-width: 120rem;
@@ -30,7 +32,6 @@ main {
     display: flex;
     flex-direction: column;
     text-align: center;
-    flex: 1 0 58rem;
     background: #514988;
     color: white;
 }
@@ -48,7 +49,7 @@ main {
 }
 
 .texto p {
-    max-width: 46rem;
+    width: 46rem;
     font-size: 2rem;
     margin: 0 auto;
 }
@@ -88,11 +89,14 @@ footer {
     flex-direction: column;
     gap: 2rem;
     padding-top: 2rem;
+    width: 80rem;
+}
+
+.bloco h2 {
     color: #F3C61F;
     text-align: center;
     font-size: 1.5rem;
     font-weight: 700;
-    width: 80rem;
 }
 
 footer .dias {
@@ -125,4 +129,119 @@ footer .dias {
 
 button:hover{
     background: #302b4e;
+}
+
+@media screen and (max-width:799px) {
+        header {
+            min-width: 80rem;
+        }
+
+        body {
+            width: 60rem;
+        }
+
+        main {
+            display: grid;
+            grid-auto-flow: row;
+        }
+
+        footer {
+            display: grid;
+            grid-auto-flow: row;
+            grid-auto-rows: max-content;
+            gap: 3rem;
+            max-width: 60rem;
+        }
+
+        .bloco {
+            max-width: 80rem;
+        }
+        
+        .bloco h2 {
+            font-size: 1.5rem;
+
+        }
+
+        .button{
+            display: flex;
+            justify-content: center;
+        }
+}
+
+@media screen and (max-width:800px) {
+    
+    
+    main {
+        display: grid;
+        grid-auto-flow: row;
+    }
+
+    .banner video {
+        max-width: 80rem;
+    }
+    footer {
+        display: grid;
+        grid-auto-flow: row;
+        grid-auto-rows: max-content;
+        gap: 3rem;
+        max-width: 80rem;
+    }
+    .button{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width:801px) {
+    header {
+        min-width: 100rem;
+    }
+
+    main {
+        display: grid;
+        gap: 1rem;
+        grid-auto-flow: column;
+        grid-auto-columns: 50%;
+    }
+
+ 
+
+    .aside {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .timer h1 {
+        font-size: 3.9rem;
+    }
+
+    .info h3 {
+        font-size: 2rem;
+    }
+
+    .banner video {
+        width: 50rem;
+    }
+
+    footer {
+        display: grid;
+        grid-auto-flow: row;
+        grid-auto-rows: max-content;
+        gap: 3rem;
+        max-width: 100rem;
+    }
+    .bloco {
+    width: 100%;
+    align-items: center;
+    }
+    
+    .bloco h2 {
+        font-size: 2rem;
+    }
+
+    .button{
+        display: flex;
+        justify-content: center;
+    }
+    
 }
