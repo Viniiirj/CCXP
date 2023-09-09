@@ -7,6 +7,7 @@
 
     <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js" defer></script>
+    <script src="js/main.js" defer></script>
 </head>
 <body>
     <header>
@@ -48,7 +49,7 @@
             </div>
 
             <div class="banner">
-                <video src="img/Arlequina.mp4" autoplay loop></video>
+                <video autoplay src="img/Arlequina.mp4" loop></video>
             </div>
         </div>
     </main>
@@ -57,18 +58,12 @@
         <div class="bloco">
             <h2>AINDA DÁ TEMPO DE GARANTIR O SEU, MAS CORRE!</h2>
             <div class="dias">
-                <div class="dia">
-                    <img src="img/img1.svg" alt="cartaz de quinta-feira">
-                </div>
-                <div class="dia">
-                    <img src="img/img2.svg" alt="cartaz de quinta-feira">
-                </div>
-                <div class="dia">
-                    <img src="img/img3.svg" alt="cartaz de quinta-feira">
-                </div>
-                <div class="dia">
-                    <img src="img/img4.svg" alt="cartaz de quinta-feira">
-                </div>
+                
+                    <img id="quinta" onmouseover="highlightCard('#quinta')" onmouseout="highlightCard('#quinta')" src="img/img1.svg" alt="cartaz de quinta-feira">
+                    <img id="sexta" onmouseover="highlightCard('#sexta')" onmouseout="highlightCard('#sexta')" src="img/img2.svg" alt="cartaz de sexta-feira">
+                    <img id="sabado" onmouseover="highlightCard('#sabado')" onmouseout="highlightCard('#sabado')" src="img/img3.svg" alt="cartaz de sabado">
+                    <img id="domingo" onmouseover="highlightCard('#domingo')" onmouseout="highlightCard('#domingo')" src="img/img4.svg" alt="cartaz de domingo">
+                
             </div>
         </div>
         <div class="button">

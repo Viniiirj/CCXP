@@ -37,3 +37,4 @@ function botao(){
 const btn = document.querySelector('#botao')
 
 btn.addEventListener('click',botao)
+
