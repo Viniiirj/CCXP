@@ -34,7 +34,5 @@ function botao(){
     return alert('Ingressos disponíveis apartir de amanhã')
 }
 
-const btn = document.querySelector('#botao')
 
-btn.addEventListener('click',botao)
 
